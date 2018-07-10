@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "material-ui/styles";
-import Menu, { MenuItem } from "material-ui/Menu";
-import Button from "material-ui/Button";
+import { withStyles } from "@material-ui/core/styles";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import Button from "@material-ui/core/Button";
 
 const styles = theme => ({ menu: { width: 100 }, menuItem: { fontSize: 16 } });
 

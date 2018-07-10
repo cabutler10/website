@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "material-ui/styles";
-import Typography from "material-ui/Typography";
+import { withStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import CodeIcon from "@material-ui/icons/Code";
 import TimelineIcon from "@material-ui/icons/Timeline";
 import UploadIcon from "@material-ui/icons/CloudUpload";

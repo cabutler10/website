@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "material-ui/styles";
-import Typography from "material-ui/Typography";
-import Hidden from "material-ui/Hidden";
+import { withStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+import Hidden from "@material-ui/core/Hidden";
 import headshot from "./img/profile.jpg";
-import Button from "material-ui/Button";
+import Button from "@material-ui/core/Button";
 import linkedinIcon from "../../theme/icons/linkedin-in.svg";
 import gitIcon from "../../theme/icons/github.svg";
 import instagramIcon from "../../theme/icons/instagram.svg";

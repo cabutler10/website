@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "material-ui/styles";
-import Typography from "material-ui/Typography";
+import { withStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import ResumeEntry from "./ResumeEntry";
 import Translate from "../../i18n/translate";
 
@@ -90,10 +90,10 @@ class Header extends Component {
             date="January 2013 - January 2015"
             company="University of Quebec at Rimouski (Rimouski, QC, Canada)"
             listItems={[
-              "Worked on a project to develop a model to simulate and optimize individual tree growth under changing climatic conditions that focuses on the competition between differing neighboring species using Bayesian methods",
+              "Contributed to the development of a model to simulate and optimize individual tree growth under changing climatic conditions that focuses on the competition between differing neighboring species using Bayesian methods",
               `Developed and lead short course 'Use of Maximum Likelihood Methods for Ecology'`,
-              "Completed preliminary analyses on the effects of different distributions for basic stochastic model",
-              "Completed data management for data set consisting of over 100,000 rows in R and Python"
+              "Completed preliminary analyses on the effects of different distributions for basic stochastic models",
+              "Completed data management for a dataset consisting of over 100,000 rows in R and Python"
             ]}
           />
           <ResumeEntry

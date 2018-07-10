@@ -1,10 +1,9 @@
-import React, { Fragment } from "react";
-import { I18n } from "react-i18next";
+import { translate } from "react-i18next";
 
 const Translate = props => {
-  let { value } = props;
+  let { value, t } = props;
 
-  return <I18n>{(t, { i18n }) => <Fragment>{t(value)}</Fragment>}</I18n>;
+  return t(value);
 };
 
-export default Translate;
+export default translate()(Translate);

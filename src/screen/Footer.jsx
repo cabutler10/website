@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "material-ui/styles";
-import Typography from "material-ui/Typography";
+import { withStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import Translate from "../i18n/translate";
 
 const styles = theme => ({

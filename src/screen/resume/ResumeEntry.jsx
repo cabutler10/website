@@ -1,8 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "material-ui/styles";
-import Typography from "material-ui/Typography";
-import List, { ListItem, ListItemIcon, ListItemText } from "material-ui/List";
+import { withStyles } from "@material-ui/core/styles";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import BulletIcon from "@material-ui/icons/Stop";
 
@@ -22,9 +24,10 @@ const styles = theme => ({
       marginLeft: 30
     }
   },
-  secondary: { color: theme.status.greyDk },
+  secondary: { fontSize: 14, color: theme.status.greyDk },
   primary: {
-    fontWeight: 600
+    fontWeight: 600,
+    color: theme.status.greyDk
   },
   right: {
     float: "right"
@@ -51,8 +54,7 @@ const styles = theme => ({
       paddingLeft: 15,
       paddingRight: 15
     }
-  },
-  listItemText: { fontSize: 14 }
+  }
 });
 
 class ResumeEntry extends Component {
@@ -66,37 +68,29 @@ class ResumeEntry extends Component {
           </ListItemIcon>
           <ListItemText
             classes={{
-              secondary: classes.secondary
+              secondary: classes.secondary,
+              primary: classes.primary
             }}
             primary={
-              <Typography
-                variant="body1"
-                color="primary"
-                className={classes.primary}
-              >
+              <Fragment>
                 {title}
                 {date && <span className={classes.right}>{date}</span>}
-              </Typography>
+              </Fragment>
             }
             secondary={company}
           />
         </ListItem>
         {listItems &&
           listItems.map(elem => (
-            <ListItem className={classes.listItemBullet} dense>
+            <ListItem key={elem} className={classes.listItemBullet} dense>
               <ListItemIcon>
                 <BulletIcon className={classes.bullet} />
               </ListItemIcon>
               <ListItemText
-                secondary={
-                  <Typography
-                    variant="body1"
-                    color="primary"
-                    className={classes.listItemText}
-                  >
-                    {elem}
-                  </Typography>
-                }
+                classes={{
+                  secondary: classes.secondary
+                }}
+                secondary={elem}
               />
             </ListItem>
           ))}

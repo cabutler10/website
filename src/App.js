@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { translate } from "react-i18next";
-import { MuiThemeProvider } from "material-ui/styles";
+import { MuiThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme/MUI";
 import Header from "./screen/header/Header";
 import Footer from "./screen/Footer";

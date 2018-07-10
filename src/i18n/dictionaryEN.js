@@ -16,7 +16,7 @@ const dictionaryEN = {
       "My background is in Applied Math for Biological Studies. I am confident in R and Python. Specifically, I am interested in using mathematics to support the decision making process.",
     interests_development: "web development",
     interests_developmentBody:
-      "I have been working in Front End Web Development for the past 3 years and love how well it compliments and enhances data analysis. I use React but have used Angular in the past.",
+      "I have been working in Front End Web Development for the past 3 years and love how well it compliments data analysis. I use React but have used Angular in the past.",
     interests_teaching: "teaching",
     interests_teachingBody:
       "I have experience teaching ages middle school through college in a classroom setting. Please check out my portfolio section for more information about the work I have done.",
